@@ -1,13 +1,51 @@
+<!--San Diego Top Spots *index.html*--> 
+<!--Created by Travis Ripley on 03/02/2019 for SDCS/Web102-->
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
+
+  <meta charset="utf-8" />
+  <!--Stylesheet/CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <!-- favicon -->
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA/4QAAPj9AAD+/wAADu8AAA7HAAAO2wAADtsAADzTAAB81wAAwNcAAMDTAADA5wAAwu8AAH78AAA++QAAACgAAACmAAAHBwAAAwMAAPkxAAD5OAAA+TwAAPk8AADDPAAAhzwAAD88AAA/PAAAPzgAAD8xAACBAwAAwQcAAP//AAD//wAA"
+    rel="icon" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <title>San Diego Top Spots</title>
 </head>
-
 <body>
-    <!-- Write your markup here -->
+  <!-- Write your markup here -->
+<h1>San Diego Top Spots</h1>
+<!-- Table -->
+<div id="table">
+  <table id="topSpots">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Link</th>
+    </tr>
+    
 
-    <!-- Don't forget to add your <script> tag here -->
+    <tbody id="table-body">
+      <tr></tr>
+    </tbody>
+  </table>
+</div>
+
+
+  <!-- Reloads info from the Server -->
+  <button id="btn_reload">Reload from Server</button>
+  <div id="output"></div>
+  <script>
+    $('#btn_reload').click(function () {
+      location.reload(true); //loads from server
+    });
+  </script>
+
+  <!-- Scripts -->
+  <script src="main.js" charset="utf-8"></script>
 </body>
+
 </html>

@@ -1,0 +1,47 @@
+body {
+ 
+  
+  padding: 1rem;
+
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  color: blue;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 75px blue, 0 0 3px darkblue;
+}
+
+table {
+  border-spacing: 0.1rem;
+}
+td,
+th {
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+ 
+}
+th {
+  background: lightblue;
+  border-color: white;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.7;
+}
+tbody tr:nth-child(even) {
+  background: #eee;
+}
+ td {
+  
+  border-color: white;
+} 
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
